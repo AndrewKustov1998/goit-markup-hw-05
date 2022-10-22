@@ -133,6 +133,9 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
 }
 
 .link.current {
@@ -159,6 +162,9 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
 }
 
 .mail-tel-section .link:hover,
@@ -171,6 +177,9 @@ ul {
   align-items: center;
   gap: 10px;
   fill: var(--secondary-text-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
 }
 
 .mail-tel-item:hover,
@@ -217,6 +226,9 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
 }
 
 .hero-button:hover,
@@ -339,6 +351,9 @@ ul {
   fill: var(--icon-color);
 
   cursor: pointer;
+
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
 }
 
 .social-item-link:hover,
@@ -375,6 +390,9 @@ ul {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   fill: var(--icon-color);
+
+  transition-property: fill, border;
+  transition-duration: 250ms;
 }
 
 .regular-clients-link:hover,
@@ -405,6 +423,9 @@ ul {
 
   color: var(--primaty-text-color);
   background-color: var(--button-color);
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
 }
 
 .filer-button:hover,
@@ -450,6 +471,11 @@ ul {
   padding: 20px 24px;
 }
 
+.projects-list .item {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+}
+
 .projects-list .item:hover {
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -492,6 +518,11 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-contact-info .link {
+  transition-property: color;
+  transition-duration: 250ms;
+}
+
 .footer-contact-info .link:hover,
 .footer-contact-info .link:focus {
   color: var(--accent-color);
@@ -530,6 +561,9 @@ ul {
   fill: var(--primary-white-color);
 
   cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
 }
 
 .footer-social-link:hover,
