@@ -26,6 +26,7 @@
   </head>
 
   <body>
+    <!-- Header -->
     <header class="header-section">
       <div class="container header-flex">
         <a href="./index.html" class="logo logo-header"><span>Web</span>Studio</a>
@@ -72,7 +73,7 @@
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
 
-          <button type="button" class="hero-button button">Замовити послугу</button>
+          <button type="button" class="hero-button button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -136,26 +137,32 @@
         <div class="container">
           <h2 class="what-we-doing-title section-title">Чим ми займаємося</h2>
           <ul class="what-we-doing-list list">
-            <li>
+            <li class="what-we-doing-item">
               <img
                 src="./images/box1.jpg"
                 alt="Людина користується комп'ютером сидячи за робочим столом"
                 width="370"
+                class="what-we-doing-image"
               />
+              <p class="what-we-doing-label">Десктопні додатки</p>
             </li>
-            <li>
+            <li class="what-we-doing-item">
               <img
                 src="./images/box2.jpg"
                 alt="Людина користується телефоном та ноутбуком сидячи за робочим столом"
                 width="370"
+                class="what-we-doing-image"
               />
+              <p class="what-we-doing-label">Мобільні додатки</p>
             </li>
-            <li>
+            <li class="what-we-doing-item">
               <img
                 src="./images/box3.jpg"
                 alt="Людина користується графічним планшетом та компьютером сидячи за робочим столом"
                 width="370"
+                class="what-we-doing-image"
               />
+              <p class="what-we-doing-label">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -210,6 +217,7 @@
                 </li>
               </ul>
             </li>
+
             <li class="item">
               <img
                 src="./images/frontend-developer.jpg"
@@ -397,6 +405,7 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer-section">
       <div class="container">
         <div class="footer-flex">
@@ -448,5 +457,18 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-button" type="button" data-modal-close>
+          <svg width="19" height="19">
+            <use href="./images/symbol-defs.svg#icon-close-v2"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
