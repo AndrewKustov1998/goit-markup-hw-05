@@ -507,12 +507,12 @@ ul {
 }
 
 .project-description-text {
-  /* padding: 63px 24px; */
-
   display: flex;
   align-items: center;
   padding: 24px;
   height: 100%;
+
+  /* question with overflow */
   overflow-y: auto;
 
   font-size: 18px;
